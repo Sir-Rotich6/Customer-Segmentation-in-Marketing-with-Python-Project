@@ -1,31 +1,32 @@
-📊 Customer Segmentation in Marketing with Python
-📝 Project Overview
+# 📊 Customer Segmentation in Marketing with Python
+## 📝 Project Overview
 
-A concise summary of the project’s purpose, the business questions, and why segmentation matters for marketing teams.
-(Use the GitHub description you already created.)
+Understanding how customers discover a product — and how this influences their engagement and long-term value — is central to modern data-driven marketing. This project applies practical machine learning and statistical analysis to uncover relationships between acquisition channels, study behavior, engagement levels, and customer lifetime value (CLV), using a real-world dataset derived from onboarding surveys, usage metrics, and lifetime-value records.
 
-📂 Repository Structure
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── final/
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   ├── 03_clustering.ipynb
-│   └── 04_insights.ipynb
-├── src/
-│   ├── data_prep.py
-│   ├── clustering.py
-│   ├── visualization.py
-│   └── utils.py
-├── reports/
-│   ├── figures/
-│   └── final_report.pdf
-├── README.md
-└── requirements.txt
+The core objective is to use unsupervised learning (clustering) to segment customers into meaningful groups that reflect behavioral, demographic, and value-based differences. These segments provide actionable insights for marketing teams, enabling them to optimize acquisition spend, refine messaging, and better understand which channels yield the most engaged and highest-value learners.
 
-📈 Business Questions
+    📂 Repository Structure
+    ├── data/
+    │   ├── raw/
+    │   ├── processed/
+    │   └── final/
+    ├── notebooks/
+    │   ├── 01_data_exploration.ipynb
+    │   ├── 02_preprocessing.ipynb
+    │   ├── 03_clustering.ipynb
+    │   └── 04_insights.ipynb
+    ├── src/
+    │   ├── data_prep.py
+    │   ├── clustering.py
+    │   ├── visualization.py
+    │   └── utils.py
+    ├── reports/
+    │   ├── figures/
+    │   └── final_report.pdf
+    ├── README.md
+    └── requirements.txt
+
+# 📈 Business Questions
 
 Does acquisition channel influence learning behavior?
 
@@ -35,7 +36,7 @@ Do minutes watched and CLV vary significantly across segments?
 
 How can segmentation inform marketing investment?
 
-📦 Dataset Description
+# 📦 Dataset Description
 
 Explain the source and structure of the dataset (without exposing sensitive info):
 
@@ -59,7 +60,7 @@ Feature types
 
 Missing value notes (e.g., minutes watched nulls → 0)
 
-🧼 Data Cleaning & Preprocessing
+# 🧼 Data Cleaning & Preprocessing
 
 Handling null values
 
@@ -73,7 +74,7 @@ Correlation analysis
 
 Visualizations (heatmap, scatter plots)
 
-🤖 Modeling: Clustering
+# 🤖 Modeling: Clustering
 1. Hierarchical Clustering (Ward)
 
 Dendrogram interpretation
@@ -94,7 +95,7 @@ Cluster-level summaries
 
 Key observations
 
-📊 Results & Insights
+# 📊 Results & Insights
 
 (You will fill this after modeling.)
 
@@ -118,7 +119,7 @@ Elbow curve
 
 Cluster scatter plots
 
-🧠 Key Learnings
+# 🧠 Key Learnings
 
 Highlight technical + business learnings:
 
@@ -128,7 +129,7 @@ Why hierarchical and K-Means differ
 
 Marketing strategy implications
 
-🚀 Future Work
+# 🚀 Future Work
 
 Add DBSCAN or GMM clustering
 
@@ -138,10 +139,10 @@ Deploy as an API
 
 Add automated reporting
 
-📘 Requirements
+# 📘 Requirements
 
-State dependencies and link to requirements.txt.
+    State dependencies and link to requirements.txt.
 
-👤 Author
+# 👤 Author
 
 @Enock Rotich
