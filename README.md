@@ -5,26 +5,54 @@ Understanding how customers discover a product — and how this influences their
 
 The core objective is to use unsupervised learning (clustering) to segment customers into meaningful groups that reflect behavioral, demographic, and value-based differences. These segments provide actionable insights for marketing teams, enabling them to optimize acquisition spend, refine messaging, and better understand which channels yield the most engaged and highest-value learners.
 
-    📂 Repository Structure
+
+# 📂 Repository Structure
+    customer-segmentation/
+    │
+    ├── README.md
+    ├── requirements.txt
+    ├── .gitignore
+    │
     ├── data/
-    │   ├── raw/
-    │   ├── processed/
-    │   └── final/
+    │   ├── raw/                    # Original CSV dataset(s)
+    │   ├── interim/                # Data after cleaning but before modeling
+    │   └── processed/              # Final dataset used for clustering
+    │
     ├── notebooks/
     │   ├── 01_data_exploration.ipynb
     │   ├── 02_preprocessing.ipynb
     │   ├── 03_clustering.ipynb
-    │   └── 04_insights.ipynb
+    │   └── 04_results_and_insights.ipynb
+    │
     ├── src/
-    │   ├── data_prep.py
-    │   ├── clustering.py
-    │   ├── visualization.py
-    │   └── utils.py
+    │   ├── __init__.py
+    │   │
+    │   ├── data_prep.py            # Cleaning, missing values, encoding
+    │   ├── feature_engineering.py  # Dummy creation, correlation filtering
+    │   ├── clustering.py           # Hierarchical + K-means methods
+    │   ├── visualization.py        # Heatmaps, dendrograms, elbow plots, etc.
+    │   └── utils.py                # Helper functions
+    │
+    ├── models/
+    │   ├── kmeans_model.pkl        # Saved final k-means model (if needed)
+    │   └── scaler.pkl              # Saved StandardScaler
+    │
     ├── reports/
-    │   ├── figures/
-    │   └── final_report.pdf
-    ├── README.md
-    └── requirements.txt
+    │   ├── figures/                # Visualizations generated in notebooks
+    │   │   ├── dendrogram.png
+    │   │   ├── elbow_curve.png
+    │   │   └── cluster_visuals.png
+    │   │
+    │   ├── exploratory_report.md   # Summary of data exploration
+    │   ├── clustering_report.md    # Summary of modeling results
+    │   └── final_marketing_insights.pdf
+    │
+    └── scripts/
+        ├── run_preprocessing.py    # CLI script for preprocessing
+        ├── run_clustering.py       # CLI script for running clustering
+        └── generate_report.py      # Auto-generate plots/reports
+
+
 
 # 📈 Business Questions
 
@@ -35,6 +63,8 @@ Are students from different regions more likely to come through specific channel
 Do minutes watched and CLV vary significantly across segments?
 
 How can segmentation inform marketing investment?
+
+
 
 # 📦 Dataset Description
 
@@ -60,6 +90,8 @@ Feature types
 
 Missing value notes (e.g., minutes watched nulls → 0)
 
+
+
 # 🧼 Data Cleaning & Preprocessing
 
 Handling null values
@@ -73,6 +105,8 @@ Feature scaling using StandardScaler
 Correlation analysis
 
 Visualizations (heatmap, scatter plots)
+
+
 
 # 🤖 Modeling: Clustering
 1. Hierarchical Clustering (Ward)
@@ -95,6 +129,8 @@ Cluster-level summaries
 
 Key observations
 
+
+
 # 📊 Results & Insights
 
 (You will fill this after modeling.)
@@ -107,7 +143,7 @@ Channel performance insights?
 
 Recommendations for marketing strategy
 
-🖼️ Visualizations
+# 🖼️ Visualizations
 
 List or display:
 
